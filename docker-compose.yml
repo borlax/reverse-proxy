@@ -4,12 +4,8 @@ services:
 
   # Proxies requests to internal services
   reverse-proxy:
-    image: nginx:1.17.10
-    container_name: reverse_proxy_demo
-    depends_on:
-        - weather-report
-        - temperature-service
-        - precip-service
+    image: nginx:latest
+    container_name: reverse_proxy
     volumes:
       - ./reverse_proxy/nginx.conf:/etc/nginx/nginx.conf
     ports:
