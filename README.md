@@ -15,4 +15,4 @@ To run the containers:
 `docker-compose up`
 
 ## Oversimplified Diagram
-<img src="reverse proxy.png"/>
+##<img src="reverse proxy.png"/>
