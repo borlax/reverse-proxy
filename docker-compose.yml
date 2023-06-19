@@ -15,7 +15,7 @@ services:
     ports:
       - 80:80
 
-  # generates weather reports
+  # application
   weather-report:
     image: weather-report
     container_name: weather-report
@@ -26,26 +26,4 @@ services:
         - precip-service
     ports:
       - 8080:80
-    restart: on-failure
-
-
-  # Retrieves the temperature
-  temperature-service:
-    image: temperature-service
-    container_name: temperature-service
-    build:
-      context: ./temperature_service
-    ports:
-      - 5001:5001
-    restart: on-failure
-
-
-  # Generates a precipitation estimate
-  precip-service:
-    image: precip-service
-    container_name: precip-service
-    build:
-      context: ./precip_service
-    ports:
-      - 5002:5002
     restart: on-failure
