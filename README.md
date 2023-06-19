@@ -14,5 +14,5 @@ To build the containers:
 To run the containers:
 `docker-compose up`
 
-## Oversimplified Diagram
-##<img src="reverse proxy.png"/>
+# ## Oversimplified Diagram
+# <img src="reverse proxy.png"/>
